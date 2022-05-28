@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Albums, PostAlbums } from './models/Albums';
+import { Album, PostAlbums } from './models/Album';
 
 @Injectable({
   providedIn: 'root'
@@ -9,16 +9,16 @@ import { Albums, PostAlbums } from './models/Albums';
 export class AlbumsService {
 
   constructor(private httpClient: HttpClient) { }
-  baseUrl = "https://localhost:7265/albums";
+  baseUrl = "https://localhost:5265/albums";
   
   // postAlbums(postAlbums: PostAlbums) {
   //   throw new Error('Method not implemented.');
   // }
   getAlbums() {
-    return this.httpClient.get<Array<Albums>>(this.baseUrl);
+    return this.httpClient.get<Array<Album>>(this.baseUrl);
   }
   postAlbum(albums: PostAlbums) {
-    return this.httpClient.post<Albums>(this.baseUrl, albums);
+    return this.httpClient.post<Album>(this.baseUrl, albums);
   }
 }
 

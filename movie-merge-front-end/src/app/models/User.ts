@@ -1,4 +1,4 @@
-export interface Users{
+export interface User{
     userId: number,
     userName: string,
     authority: string,
@@ -7,3 +7,4 @@ export interface Users{
 
 
 }
+export type PostUser = Omit<User, "userId">;

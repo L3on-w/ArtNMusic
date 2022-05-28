@@ -2,7 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AlbumsService } from '../albums.service';
-import { PostAlbums } from '../models/Albums';
+import { PostAlbums } from '../models/Album';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-album-upload',

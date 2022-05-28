@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlbumUploadComponent } from '../album-upload/album-upload.component';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +11,16 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  
 
+
+
+  ngOnInit(): void {
+
+  }
 }
+
+
+
+// new base url? 
+//https://go.microsoft.com/fwlink/?linkid=2123754

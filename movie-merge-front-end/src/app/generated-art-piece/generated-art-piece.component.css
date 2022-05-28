@@ -3,16 +3,29 @@
 	flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(6, 53, 18);
-    color: rgb(139, 224, 139)
+    background-color: rgb(122, 219, 223);
+    color: rgb(163, 88, 138)
 
 }
 
-.variousImages{
+
+ .variousImages{
 
     display: flex;
 	flex-direction: column;
     justify-content: center;
     text-align: center;
 
+} 
+
+.img3{
+
+    object-fit: fill;
+    object-position: left;
+    
+}
+.img4{
+
+    object-fit: fill;
+    object-position: right;
 }

@@ -3,17 +3,29 @@
 	flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(6, 53, 18);
-    color: rgb(139, 224, 139)
+    background-color: rgb(122, 219, 223);
+    color: rgb(163, 88, 138)
 
 
 }
-.homeDesctription{
+
+
+.homeDescription{
 
     display: flex;
 	flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(6, 53, 18);
-    color: rgb(139, 224, 139)
+    background-color: rgb(122, 219, 223);
+    color: rgb(163, 88, 138)
+}
+
+.button{
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(196, 167, 129);
+    color: rgb(27, 13, 19)
+
 }

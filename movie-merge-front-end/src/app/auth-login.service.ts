@@ -10,7 +10,9 @@ import {v4 as uuidv4 } from 'uuid';
 export class AuthLoginService {
 
  constructor( private _http: HttpClient) { }
+
   baseUrl = "http://localhost:4200/login";
+
 
   userName$: ReplaySubject<User | null> = new ReplaySubject();
 
@@ -29,6 +31,7 @@ export class AuthLoginService {
       'response_type=code',
       `state=${authState}`,
       'allow_signup=true',
+
       'redirect_uri=http://localhost:7265/auth-login',
       'scope= user-read-email user-read-private',
     ];

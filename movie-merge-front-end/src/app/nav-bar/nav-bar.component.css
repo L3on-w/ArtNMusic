@@ -1,4 +1,5 @@
 .navigation{
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,12 +9,13 @@
     font-size: 15px;
     text-align: center;
     outline: none;
-    color: rgb(4, 10, 5);
-    background-color: #08291b;
+    color: rgb(230, 210, 233);
+    background-color: #d1bdcf;
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
   }
+
   
   .button:hover {background-color: #90dbbc}
   

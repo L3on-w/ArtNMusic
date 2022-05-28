@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace MusicMerge.Data
 {
-    public class MusicMergeContext : DbContext /*IMusicMergeContext*/
+    public class MusicMergeContext : DbContext
     {
         private string _connectionString;
 
@@ -17,11 +17,6 @@ namespace MusicMerge.Data
             : base(options)
         {
         }
-
-        //public DbSet<Album> Albums { get; set; }
-        //public DbSet<User> Users { get; set; }
-        //public DbSet<GeneratedImage> GeneratedImages { get; set; }
-
         public DbSet<MusicMerge.Album> Albums { get; set; }
 
         public DbSet<MusicMerge.GeneratedImage> GeneratedImages { get; set; }

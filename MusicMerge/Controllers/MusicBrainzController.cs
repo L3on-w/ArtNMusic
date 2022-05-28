@@ -17,6 +17,7 @@ namespace MusicMerge
         public string? Name { get; set; }
     }
 
+
     [Route("api/[controller]")]
     [ApiController]
     public class MusicBrainzController : ControllerBase
@@ -45,7 +46,6 @@ namespace MusicMerge
 
             return releases;
         }
-
 
         private bool AlbumExists(int id)
         {

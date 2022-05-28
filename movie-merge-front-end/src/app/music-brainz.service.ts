@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Artist } from './models/Artist';
+import { Artist } from './models/AlbumQuery';
 @Injectable({
   providedIn: 'root'
 })

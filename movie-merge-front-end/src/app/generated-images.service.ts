@@ -9,7 +9,7 @@ export class GeneratedImagesService {
 
  
   constructor(private httpClient: HttpClient) { }
-  baseUrl = "https://localhost:7265/generated-images";
+  baseUrl = "https://localhost:5265/generated-images";
 
   getGeneratedImage(){
     return this.httpClient.get<GeneratedImages>(this.baseUrl);
